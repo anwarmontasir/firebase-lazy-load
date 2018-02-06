@@ -8,10 +8,10 @@ $headerHeight: 40px;
 
 /* RESPONSIVE TYPOGRAPHY VALUES, SPECIFY WITHOUT PX
    https://www.smashingmagazine.com/2016/05/fluid-typography/ */
-   $minFontVal: 16;
-   $maxFontVal: 20;
+   $minFontVal: 20;
+   $maxFontVal: 24;
    $minViewportVal: 480;
-   $maxViewportVal: 1024;
+   $maxViewportVal: 1200;
    
    $minFontSize: $(minFontVal)px;
    $maxFontSize: $(maxFontVal)px;

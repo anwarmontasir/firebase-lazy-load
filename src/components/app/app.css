@@ -1,5 +1,7 @@
 @import '../variables.css';
 
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,700');
+
 * {box-sizing: border-box;}
 
 body {

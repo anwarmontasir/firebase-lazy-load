@@ -5,7 +5,7 @@
             <label for="email">Email</label>
             <input name="email" id="email" type="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" title="Please provde an email in the form of you@somedomain.com" required>
             <label for="password">Password</label>
-            <div id="pwd">
+            <div class="pwd">
                 <input type="password" id="password" name="password" required>
                 <button type="button" class="show-password" tabindex="-1">Show</button>
             </div>
@@ -13,6 +13,29 @@
         </form>
         <form id="sign-up">
             <h1>Register</h1>
+            <fieldset>
+                <legend>Account Type</legend>
+                <div class="radio">
+                    <label for="basic">
+                        <input type="radio" name="account-type" id="basic" value="Basic">
+                        Basic
+                    </label>
+                    <label for="advanced">
+                        <input type="radio" name="account-type" id="advanced" value="Advancdd">
+                        Advanced
+                    </label>
+                </div>
+            </fieldset>
+            <label for="register-name">Name</label>
+            <input name="register-name" id="register-name" type="text" required>
+            <label for="register-email">Email</label>
+            <input name="register-email" id="register-email" type="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" title="Please provde an email in the form of you@somedomain.com" required>
+            <label for="register-password">Password</label>
+            <div class="pwd">
+                <input name-register="password" id="register-password" type="password" required>
+                <button type="button" class="show-password" tabindex="-1">Show</button>
+            </div>
+            <button type="submit">Submit</button>
         </form>
     </div>
     <!-- <div id="auth-container"></div> -->

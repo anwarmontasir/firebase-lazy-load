@@ -53,4 +53,6 @@ main {
 footer {
     padding: $contentPadding;
     text-align: center;
+    background: $dark;
+    color: $light;
 }

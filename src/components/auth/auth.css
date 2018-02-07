@@ -10,11 +10,11 @@
             margin-bottom: 1rem;
         }
         input {
-            padding: .5rem;
+            height: 46px;
             border: 1px solid $thin;
             font-size: 1em;
         }
-        button {
+        > button {
             float: right;
             background: $mediumBlue;
             font-size: 1em;
@@ -26,6 +26,21 @@
             border: none;
             border-radius: 8px;
         }
+    }
+    #pwd {
+        position: relative;
+        button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 46px;
+            background: $dark;
+            color: $light;
+            font-size: 14px;
+            width: 60px;
+            border: 1px solid $darker;
+        }
+        input {width: calc(100% - 60px);}
     }
 }
 

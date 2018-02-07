@@ -1,12 +1,1 @@
 @import '../variables.css';
-
-main {
-    padding-top: $headerHeight;
-    .maxwidth-wrap {
-        width: 100%;
-        max-width: $maxViewportSize;
-        padding: $contentPadding;
-        margin: 0 auto;
-    }
-    p {font-family: 'Cormorant Garamond', serif;}
-}

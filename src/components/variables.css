@@ -1,8 +1,10 @@
 /* variables.css */
-$dark: #393d3f;
+$dark: #3f4446;
 $darker: #292d2f;
+$thin: #696d6f;
 $light: #F4ECEA;
-$lightBlue: #5fa8d3;
+$lightBlue: #6fb8e3;
+$mediumBlue: #2f78a3;
 $contentPadding: .5rem 1rem;
 $headerHeight: 40px;
 

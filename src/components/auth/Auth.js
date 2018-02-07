@@ -1,5 +1,6 @@
 import Template from '../Template';
 import html from './auth.html';
+import './auth.css';
 import { auth, providers } from '../../services/firebase';
 import firebaseui from 'firebaseui';
 // has one missing resource. doesn't seem important, but currently using <link>

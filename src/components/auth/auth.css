@@ -1,0 +1,39 @@
+@import '../variables.css';
+
+.auth-flex {
+    display: flex;
+    flex-direction: column;
+    form {
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        input {
+            padding: .5rem;
+            border: 1px solid $thin;
+            font-size: 1em;
+        }
+        button {
+            float: right;
+            background: $mediumBlue;
+            font-size: 1em;
+            color: $light;
+            font-weight: 100;
+            letter-spacing: 1px;
+            padding: .5rem;
+            margin-top: .5rem;
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .auth-flex {
+        flex-direction: row;
+    }
+    .auth-flex > form {
+        flex-grow: 1;
+    }
+    .auth-flex > form:first-child {margin-right: 2em;}
+    .auth-flex > form:last-child {margin-left: 2em;}
+}

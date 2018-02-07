@@ -32,8 +32,20 @@ small {font-size: .5em;}
 h1, h2, h3, h4 {
     line-height: 1.25;
     margin: 2rem 0 1rem;
+    border-bottom: 1px solid $thin;
 }
 p {
     line-height: 1.5;
     margin-bottom: 1rem;
+}
+
+.maxwidth-wrap {
+    width: 100%;
+    max-width: $maxViewportSize;
+    padding: $contentPadding;
+    margin: 0 auto;
+}
+main {
+    padding-top: $headerHeight;
+    p {font-family: 'Cormorant Garamond', serif;}
 }

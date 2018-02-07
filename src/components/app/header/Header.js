@@ -20,7 +20,7 @@ export default class Header {
         child = new User().render();
       } else {
         child = document.createElement('a');
-        child.textContent = 'Sign In';
+        child.textContent = 'Log In / Register';
         child.href = '#auth';
         userItem.appendChild(child);
       }

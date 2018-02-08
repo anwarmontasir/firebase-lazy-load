@@ -1,12 +1,12 @@
 import Template from '../Template';
-import html from './auth.html';
+import html from './login.html';
 import './auth.css';
 import { auth, providers } from '../../services/firebase';
 
 
 const template = new Template(html);
 
-export default class Auth {
+export default class Login {
 
   constructor() {
 

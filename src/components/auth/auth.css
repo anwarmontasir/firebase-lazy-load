@@ -1,8 +1,9 @@
 @import '../variables.css';
 
-.auth-flex {
-    display: flex;
-    flex-direction: column;
+.form-wrap {
+    max-width: calc($maxViewportSize / 2);
+    margin: 0 auto;
+    padding: 0 1rem;
     form {
         margin-bottom: 2rem;
         label, input {
@@ -55,18 +56,9 @@
         }
         input {width: calc(100% - 60px);}
     }
-}
-
-@media (min-width: 720px) {
-    main {
-        background: linear-gradient(90deg, #fff 50%, $light 50%);
+    &::after { 
+        content: "";
+        display: block; 
+        clear: both;
     }
-    .auth-flex {
-        flex-direction: row;
-    }
-    .auth-flex > form {
-        flex-grow: 1;
-    }
-    .auth-flex > form:first-child {margin-right: 2em;}
-    .auth-flex > form:last-child {margin-left: 2em;}
 }

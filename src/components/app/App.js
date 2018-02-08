@@ -2,7 +2,8 @@ import Template from '../Template';
 import html from './app.html';
 import './app.css';
 import Header from './header/Header';
-import Auth from '../auth/Auth';
+import Login from '../auth/Login';
+// import Register from '../auth/Register';
 import Home from '../home/Home.js';
 import Pets from '../pets/Pets.js';
 import { auth } from '../../services/firebase';
@@ -11,7 +12,8 @@ import { removeChildren } from '../dom';
 const template = new Template(html);
 
 const map = new Map();
-map.set('#auth', { Component: Auth, isPublic: true });
+map.set('#login', { Component: Login, isPublic: true });
+// map.set('#register', { Component: Register, isPublic: true });
 map.set('#pets', { Component: Pets, isPublic: false });
 
 const homepage = { Component: Home, isPublic: true };

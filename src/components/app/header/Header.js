@@ -11,21 +11,39 @@ export default class Header {
 
   render() {
     const dom = template.clone();
-    const userItem = dom.querySelector('.user-nav');
+
+    // collapse nav on link click
+    const mainNav = dom.querySelectorAll('#main-nav ul li a');
+    const burger = dom.querySelector('#burger');
+
+    mainNav.forEach(link => {
+      link.addEventListener('click', () => {
+        burger.checked = false;
+      });
+    });
+
+    const userNav = dom.querySelector('#user-nav');
 
     auth.onAuthStateChanged(user => {
+      removeChildren(userNav);
+
       let child = null;
 
       if(user) {
         child = new User().render();
       } else {
-        child = document.createElement('a');
-        child.textContent = 'Log In / Register';
-        child.href = '#auth';
-        userItem.appendChild(child);
+        const newElements = [
+          {textContent: 'Log In', href: '#login'},
+          {textContent: 'Register', href: '#register'}
+        ];
+        newElements.forEach(elem => {
+          child = document.createElement('a');
+          child.textContent = elem.textContent;
+          child.href = elem.href;
+          userNav.appendChild(child);
+        });
       }
-      removeChildren(userItem);
-      userItem.appendChild(child);
+      
     });
     return dom;
   }

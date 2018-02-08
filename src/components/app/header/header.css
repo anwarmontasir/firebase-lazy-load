@@ -10,7 +10,7 @@ header {
     letter-spacing: 2px;
     #logo {
         position: absolute;
-        left: 42px;
+        left: 46px;
         top: 8px;
         z-index: 3;
         font-size: 25px;
@@ -20,7 +20,7 @@ header {
     input + label {
         position: absolute;
         top: 12px;
-        left: 12px;
+        left: 16px;
         width: 106px;
         height: 20px;
         z-index: 3;
@@ -80,17 +80,23 @@ header {
             }
         }
     }
-    .user-nav {
+    #user-nav {
         position: absolute;
         z-index: 3;
         top: 12px;
-        right: 12px;
+        right: 16px;
         font-size: 14px;
         font-weight: 300;
         letter-spacing: 0;
         a {
             color: $lightBlue;
             text-decoration: none;
+            &:first-child {
+                display: inline-block;
+                margin-right: 5px;
+                padding-right: 5px;
+                border-right: 1px solid $light;
+            }
         }
         button {
             background: none;
